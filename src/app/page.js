@@ -33,7 +33,7 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen bg-black text-white p-8">
+    <main className="min-h-screen bg-gradient-to-br from-black via-zinc-900 to-black text-white p-8">
       <div className="max-w-6xl mx-auto">
 
         <h1 className="text-5xl font-bold mb-4">
@@ -54,7 +54,7 @@ export default function Home() {
           value={code}
           onChange={(e) => setCode(e.target.value)}
           placeholder="Paste your code here..."
-          className="w-full h-80 bg-zinc-900 border border-zinc-700 rounded-2xl p-5 outline-none"
+          className="w-full h-80 bg-zinc-900/80 backdrop-blur border border-zinc-700 rounded-2xl p-5 outline-none"
         />
 
         <div className="flex gap-4 mt-6">
